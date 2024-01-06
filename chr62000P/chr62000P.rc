@@ -1,0 +1,644 @@
+explicitActiveChannels: TRUE
+library: chr62000P_*.*
+
+class: "chr62000P"
+flags: 0
+sorted: no
+implements: ivi, iviResourceMgr
+
+
+attribute: "Range Check"
+	"Inherent IVI Properties:User Options:Range Check"
+	bool readwrite 1 100592
+	//const: CHR62000_ATTR_RANGE_CHECK
+"Specifies whether to validate attribute values and function parameters.  If enabled, the instrument driver validates the parameter values that you pass to driver functions.  Range checking parameters is very useful for debugging.  After you validate your program, you can set this attribute to VI_FALSE (0)  to disable range checking and maximize performance.
+    The default value is VI_TRUE (1) .   Use the chr62000_InitWithOptions function to override this value.
+    
+
+VI_TRUE (1)
+True
+
+VI_FALSE (0)
+False
+
+"
+attribute: "Query Instrument Status"
+	"Inherent IVI Properties:User Options:Query Instrument Status"
+	bool readwrite 1 100593
+	//const: CHR62000_ATTR_QUERY_INSTR_STATUS
+"Specifies whether the instrument driver queries the instrument status after each operation.  Querying the instrument status is very useful for debugging.  After you validate your program, you can set this attribute to VI_FALSE (0)  to disable status checking and maximize performance
+    The instrument driver can choose to ignore status checking for particular attributes regardless of the setting of this attribute.
+    The default value is VI_TRUE (1) .   Use the chr62000_InitWithOptions function to override this value.
+    
+
+VI_TRUE (1)
+True
+
+VI_FALSE (0)
+False
+
+"
+attribute: "Cache"
+	"Inherent IVI Properties:User Options:Cache"
+	bool readwrite 1 100594
+	//const: CHR62000_ATTR_CACHE
+"Specifies whether to cache the value of attributes.  When caching is enabled, the instrument driver keeps track of the current instrument settings and avoids sending redundant commands to the instrument.  Thus, you can significantly increase execution speed.
+    The instrument driver can choose always to cache or never to cache particular attributes regardless of the setting of this attribute.
+    The default value is VI_TRUE (1) .   Use the chr62000_InitWithOptions function to override this value.
+    
+
+VI_TRUE (1)
+True
+
+VI_FALSE (0)
+False
+
+"
+attribute: "Simulate"
+	"Inherent IVI Properties:User Options:Simulate"
+	bool readwrite 1 100595
+	//const: CHR62000_ATTR_SIMULATE
+"Specifies whether or not to simulate instrument driver I/O operations.  If simulation is enabled, instrument driver functions perform range checking and call Ivi_GetAttribute and Ivi_SetAttribute functions, but they do not perform instrument I/O.  For output parameters that represent instrument data, the instrument driver functions return calculated values.
+    The default value is VI_FALSE (0) .   Use the chr62000_InitWithOptions function to override this value.
+    
+
+VI_TRUE (1)
+True
+
+VI_FALSE (0)
+False
+
+"
+attribute: "Record Value Coercions"
+	"Inherent IVI Properties:User Options:Record Value Coercions"
+	bool readwrite 1 100596
+	//const: CHR62000_ATTR_RECORD_COERCIONS
+"Specifies whether the IVI engine keeps a list of the value coercions it makes for ViInt32 and ViReal64 attributes.  You call chr62000_GetNextCoercionRecord to extract and delete the oldest coercion record from the list.
+    The default value is VI_FALSE (0) .   Use the chr62000_InitWithOptions function to override this value.
+    
+
+VI_TRUE (1)
+True
+
+VI_FALSE (0)
+False
+
+"
+attribute: "Description"
+	"Inherent IVI Properties:Driver Identification:Description"
+	string readonly 1 100792
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_DESCRIPTION
+"A string that contains a brief description of the specific driver
+    
+
+"
+attribute: "Driver Prefix"
+	"Inherent IVI Properties:Driver Identification:Driver Prefix"
+	string readonly 1 1006BE
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_PREFIX
+"A string that contains the prefix for the instrument driver.  The name of each user-callable function in this driver starts with this prefix.
+    
+
+"
+attribute: "Driver Vendor"
+	"Inherent IVI Properties:Driver Identification:Driver Vendor"
+	string readonly 1 100791
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_VENDOR
+"A string that contains the name of the vendor that supplies this driver.
+    
+
+"
+attribute: "Major Version"
+	"Inherent IVI Properties:Driver Identification:Major Version"
+	iL readonly 1 100787
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_MAJOR_VERSION
+"The major version number of this instrument driver.
+    
+
+"
+attribute: "Minor Version"
+	"Inherent IVI Properties:Driver Identification:Minor Version"
+	iL readonly 1 100788
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_MINOR_VERSION
+"The minor version number of this instrument driver.
+    
+
+"
+attribute: "Revision"
+	"Inherent IVI Properties:Driver Identification:Revision"
+	string readonly 1 1007B7
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_REVISION
+"A string that contains additional version information about this instrument driver.
+    
+
+"
+attribute: "Class Specification Major Version"
+	"Inherent IVI Properties:Driver Identification:Class Specification Major Version"
+	iL readonly 1 100793
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_CLASS_SPEC_MAJOR_VERSION
+"The major version number of the class specification with which this driver is compliant.
+    
+
+"
+attribute: "Class Specification Minor Version"
+	"Inherent IVI Properties:Driver Identification:Class Specification Minor Version"
+	iL readonly 1 100794
+	//const: CHR62000_ATTR_SPECIFIC_DRIVER_CLASS_SPEC_MINOR_VERSION
+"The minor version number of the class specification with which this driver is compliant.
+    
+
+"
+attribute: "Supported Instrument Models"
+	"Inherent IVI Properties:Driver Capabilities:Supported Instrument Models"
+	string readonly 1 1006D7
+	//const: CHR62000_ATTR_SUPPORTED_INSTRUMENT_MODELS
+"Contains a model code of the instrument. For drivers that support more than one device, this attribute contains a comma-separated list of supported instrument models.
+    
+
+"
+attribute: "Class Group Capabilities"
+	"Inherent IVI Properties:Driver Capabilities:Class Group Capabilities"
+	string readonly 1 100721
+	//const: CHR62000_ATTR_GROUP_CAPABILITIES
+"A string that contains a comma-separated list of class-extention groups that this driver implements.
+    
+
+"
+attribute: "Number of Channels"
+	"Inherent IVI Properties:Driver Capabilities:Number of Channels"
+	iL readonly 1 10065B
+	//const: CHR62000_ATTR_NUM_CHANNELS
+"Indicates the number of channels that the specific instrument driver supports.  
+    For each attribute for which the IVI_VAL_MULTI_CHANNEL (1024)  flag attribute is set, the IVI engine maintains a separate cache value for each channel.
+    
+
+"
+attribute: "Manufacturer"
+	"Inherent IVI Properties:Instrument Identification:Manufacturer"
+	string readonly 1 10078F
+	//const: CHR62000_ATTR_INSTRUMENT_MANUFACTURER
+"A string that contains the name of the instrument manufacturer you are currently using.
+    
+
+"
+attribute: "Model"
+	"Inherent IVI Properties:Instrument Identification:Model"
+	string readonly 1 100790
+	//const: CHR62000_ATTR_INSTRUMENT_MODEL
+"A string that contains the model number or name of the instrument that you are currently using.
+    
+
+"
+attribute: "Firmware Revision"
+	"Inherent IVI Properties:Instrument Identification:Firmware Revision"
+	string readonly 1 10078E
+	//const: CHR62000_ATTR_INSTRUMENT_FIRMWARE_REVISION
+"A string that contains the firmware revision information for the instrument you are currently using.
+    
+
+"
+attribute: "Primary Error"
+	"Inherent IVI Properties:Error Info:Primary Error"
+	iL readwrite 1 1005F5
+	//const: CHR62000_ATTR_PRIMARY_ERROR
+"A code that describes the first error that occurred since the last call to chr62000_GetErrorInfo on the session.  The value follows the VXIplug&play completion code conventions.  A negative value describes an error condition.  A positive value describes a warning condition and indicates that no error occurred.  A zero indicates that no error or warning occurred. The error and warning values can be status codes defined by IVI, VISA, class drivers, or specific drivers.
+    
+
+"
+attribute: "Secondary Error"
+	"Inherent IVI Properties:Error Info:Secondary Error"
+	iL readwrite 1 1005F6
+	//const: CHR62000_ATTR_SECONDARY_ERROR
+"An optional code that provides additional information concerning the primary error condition.  The error and warning values can be status codes defined by IVI, VISA, class drivers, or specific drivers.  Zero indicates no additional information.
+    
+
+"
+attribute: "Error Elaboration"
+	"Inherent IVI Properties:Error Info:Error Elaboration"
+	string readwrite 1 1005F7
+	//const: CHR62000_ATTR_ERROR_ELABORATION
+"An optional string that contains additional information concerning the primary error condition.
+    
+
+"
+attribute: "Logical Name"
+	"Inherent IVI Properties:Advanced Session Information:Logical Name"
+	string readonly 1 1006C1
+	//const: CHR62000_ATTR_LOGICAL_NAME
+"A string containing the logical name you specified when opening the current IVI session.
+     You may pass a logical name to the chr62000_init or chr62000_InitWithOptions functions.  The IVI Configuration utility must contain an entry for the logical name.  The logical name entry refers to a virtual instrument section in the IVI Configuration file.  The virtual instrument section specifies a physical device and initial user options.
+    
+
+"
+attribute: "Resource Descriptor"
+	"Inherent IVI Properties:Advanced Session Information:Resource Descriptor"
+	string readonly 1 1006C0
+	//const: CHR62000_ATTR_RESOURCE_DESCRIPTOR
+"Indicates the resource descriptor the driver uses to identify the physical device.
+    If you initialize the driver with a logical name, this attribute contains the resource descriptor that corresponds to the entry in the IVI Configuration utility.  
+    If you initialize the instrument driver with the resource descriptor, this attribute contains that value.
+    
+
+"
+attribute: "I/O Session Type"
+	"Inherent IVI Properties:Advanced Session Information:I/O Session Type"
+	string readonly 1 1006D4
+	//const: CHR62000_ATTR_IO_SESSION_TYPE
+"Contains the type of the I/O session that this driver uses to communicate with the instrument.     
+
+"
+attribute: "Instrument I/O Session"
+	"Inherent IVI Properties:Advanced Session Information:Instrument I/O Session"
+	uL readonly 1 1006D2
+	//const: CHR62000_ATTR_IO_SESSION
+"Specifies the I/O session that the specific driver uses to communicate with the instrument.
+    
+
+"
+attribute: "ID Query Response"
+	"Miscellaneous Properties:ID Query Response"
+	string readonly 1 118C31
+	//const: CHR62000_ATTR_ID_QUERY_RESPONSE
+"Returns the ID Query response string.  The instrument driver gets the value of this attribute when you pass VI_TRUE (1)  for the ID Query parameter to the chr62000_init or chr62000_InitWithOptions function.
+    
+
+"
+attribute: "CHR62000_ATTR_VOLTAGE"
+	"Source Properties:CHR62000_ATTR_VOLTAGE"
+	fD readwrite 1 118C32
+	//const: CHR62000_ATTR_VOLTAGE
+"Specifies the output voltage to the power supply.
+
+Units:  volt
+Valid Range:  0.00-80.00
+Default Value:  0.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_VOLT_LIMIT_HIGH"
+	"Source Properties:CHR62000_ATTR_VOLT_LIMIT_HIGH"
+	fD readwrite 1 118C33
+	//const: CHR62000_ATTR_VOLT_LIMIT_HIGH
+"Specifies the voltage high limit to the power supply.
+
+Units:  volt
+Valid Range:  0.0-80.0
+Default Value:  80.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_VOLT_LIMIT_LOW"
+	"Source Properties:CHR62000_ATTR_VOLT_LIMIT_LOW"
+	fD readwrite 1 118C34
+	//const: CHR62000_ATTR_VOLT_LIMIT_LOW
+"Specifies the voltage low limit to the power supply.
+
+Units:  volt
+Valid Range:  0.0-80.0
+Default Value:  0.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_VOLT_PROTECT"
+	"Source Properties:CHR62000_ATTR_VOLT_PROTECT"
+	fD readwrite 1 118C35
+	//const: CHR62000_ATTR_VOLT_PROTECT
+"Specifies the over voltage protection to the power supply.
+
+Units:  volt
+Valid Range:  0.0-88.0
+Default Value:  88.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_VOLT_SLEW"
+	"Source Properties:CHR62000_ATTR_VOLT_SLEW"
+	fD readwrite 1 118C36
+	//const: CHR62000_ATTR_VOLT_SLEW
+"Specifies the rising or falling slew rate of output voltage to the power supply.
+
+Units:  V/ms
+Valid Range:  0.01-10.00
+Default Value:  1.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_VDC_ON_RISE"
+	"Source Properties:CHR62000_ATTR_VDC_ON_RISE"
+	fD readwrite 1 118C4E
+	//const: CHR62000_ATTR_VDC_ON_RISE
+"Specifies the DC_ON rising voltage to the power supply.
+
+Units:  volt
+Valid Range:  0.5-79.5
+Default Value:  0.5
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_VDC_ON_FALL"
+	"Source Properties:CHR62000_ATTR_VDC_ON_FALL"
+	fD readwrite 1 118C4F
+	//const: CHR62000_ATTR_VDC_ON_FALL
+"Specifies the DC_ON falling voltage to the power supply.
+
+Units:  volt
+Valid Range:  0.5-79.5
+Default Value:  0.5
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_CURRENT"
+	"Source Properties:CHR62000_ATTR_CURRENT"
+	fD readwrite 1 118C37
+	//const: CHR62000_ATTR_CURRENT
+"Specifies the output current to the power supply.
+
+Units:  amp
+Valid Range:  0.00-60.00
+Default Value:  0.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_CURR_LIMIT_HIGH"
+	"Source Properties:CHR62000_ATTR_CURR_LIMIT_HIGH"
+	fD readwrite 1 118C38
+	//const: CHR62000_ATTR_CURR_LIMIT_HIGH
+"Specifies the current high limit to the power supply.
+
+Units:  amp
+Valid Range:  0.0-60.0
+Default Value:  60.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_CURR_LIMIT_LOW"
+	"Source Properties:CHR62000_ATTR_CURR_LIMIT_LOW"
+	fD readwrite 1 118C39
+	//const: CHR62000_ATTR_CURR_LIMIT_LOW
+"Specifies the current low limit to the power supply.
+
+Units:  amp
+Valid Range:  0.0-60.0
+Default Value:  0.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_CURR_PROTECT"
+	"Source Properties:CHR62000_ATTR_CURR_PROTECT"
+	fD readwrite 1 118C3A
+	//const: CHR62000_ATTR_CURR_PROTECT
+"Specifies the over current protection to the power supply.
+
+Units:  amp
+Valid Range:  0.0-63.0
+Default Value:  63.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_CURR_SLEW"
+	"Source Properties:CHR62000_ATTR_CURR_SLEW"
+	fD readwrite 1 118C3B
+	//const: CHR62000_ATTR_CURR_SLEW
+"Specifies the rising or falling slew rate of output current to the power supply.
+
+Units:  A/ms
+Valid Range:  0.01-1.00
+Default Value:  1.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_POWER_PROTECT"
+	"Source Properties:CHR62000_ATTR_POWER_PROTECT"
+	fD readwrite 1 118C3C
+	//const: CHR62000_ATTR_POWER_PROTECT
+"Specifies the over power protection to the power supply.
+
+Units:  watt
+Valid Range:  0.0-1260.0
+Default Value:  1260.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_TTL_PORT"
+	"Configure Properties:CHR62000_ATTR_TTL_PORT"
+	iL readwrite 1 118C3E
+	//const: CHR62000_ATTR_TTL_PORT
+"Specifies the TTL value to the power supply.
+
+Valid Range: 0-255
+   
+Default Value: 0
+
+"
+attribute: "CHR62000_ATTR_REMOTE_MODE"
+	"Configure Properties:CHR62000_ATTR_REMOTE_MODE"
+	bool readwrite 1 118C40
+	//const: CHR62000_ATTR_REMOTE_MODE
+"Enable or disable remote control status. 
+
+Values represent:
+VI_TRUE  (1) - Enable remote control
+VI_FALSE (0) - Disable remote control
+   
+Default Value: VI_FALSE
+
+
+VI_TRUE (1)
+True
+
+VI_FALSE (0)
+False
+
+"
+attribute: "CHR62000_ATTR_FOLDBACK_DELAY_TIME"
+	"Configure Properties:CHR62000_ATTR_FOLDBACK_DELAY_TIME"
+	fD readwrite 1 118C42
+	//const: CHR62000_ATTR_FOLDBACK_DELAY_TIME
+"Specifies the foldback delay time to the power supply.
+
+Units: second
+Valid Range: 0.01-600.00
+Default Value: 0.01
+
+"
+attribute: "CHR62000_ATTR_AVG_METHOD"
+	"Configure Properties:CHR62000_ATTR_AVG_METHOD"
+	bool readwrite 1 118C50
+	//const: CHR62000_ATTR_AVG_METHOD
+"Specifies the power supply's average method of AD.
+
+Valid Range:
+VI_TRUE  (1) - average method sets to MOVING
+VI_FALSE (0) - average method sets to FIXED
+
+Default Value: VI_FALSE
+
+VI_TRUE (1)
+True
+
+VI_FALSE (0)
+False
+
+"
+attribute: "CHR62000_ATTR_PROG_SELECTED"
+	"Program Properties:CHR62000_ATTR_PROG_SELECTED"
+	iL readwrite 1 118C45
+	//const: CHR62000_ATTR_PROG_SELECTED
+"Specifies the program selected to the power supply.
+
+Valid Range: 1-10
+   
+Default Value: 1
+
+"
+attribute: "CHR62000_ATTR_PROG_ADD"
+	"Program Properties:CHR62000_ATTR_PROG_ADD"
+	iL readwrite 1 118C54
+	//const: CHR62000_ATTR_PROG_ADD
+"
+
+"
+attribute: "CHR62000_ATTR_PROG_SEQ_REST"
+	"Program Properties:CHR62000_ATTR_PROG_SEQ_REST"
+	iL readwrite 1 118C53
+	//const: CHR62000_ATTR_PROG_SEQ_REST
+"
+
+"
+attribute: "CHR62000_ATTR_PROG_SEQ_SELECTED"
+	"Program Properties:CHR62000_ATTR_PROG_SEQ_SELECTED"
+	iL readwrite 1 118C4A
+	//const: CHR62000_ATTR_PROG_SEQ_SELECTED
+"Specifies the sequence selected to the power supply.
+
+Valid Range: 1-100
+   
+Default Value: 1
+
+"
+attribute: "CHR62000_ATTR_PROG_STEP_STARTV"
+	"Program Properties:CHR62000_ATTR_PROG_STEP_STARTV"
+	fD readwrite 1 118C51
+	//const: CHR62000_ATTR_PROG_STEP_STARTV
+"Specifies the step mode start voltage to the power supply.
+
+Units:  volt
+Valid Range:  0.00-80.00
+Default Value:  0.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_PROG_STEP_ENDV"
+	"Program Properties:CHR62000_ATTR_PROG_STEP_ENDV"
+	fD readwrite 1 118C52
+	//const: CHR62000_ATTR_PROG_STEP_ENDV
+"Specifies the step mode end voltage to the power supply.
+
+Units:  volt
+Valid Range:  0.00-80.00
+Default Value:  0.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_PROG_CP_VOLTAGE"
+	"Program Properties:CHR62000_ATTR_PROG_CP_VOLTAGE"
+	fD readwrite 1 118C55
+	//const: CHR62000_ATTR_PROG_CP_VOLTAGE
+"Specifies the CP tracking voltage to the power supply. It's a hidden and multi channel attribute.
+
+Units:  volt
+Valid Range:  0.00-80.00
+Default Value:  0.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_PROG_CP_CURRENT"
+	"Program Properties:CHR62000_ATTR_PROG_CP_CURRENT"
+	fD readwrite 1 118C56
+	//const: CHR62000_ATTR_PROG_CP_CURRENT
+"Specifies the CP tracking current to the power supply. It's a hidden and multi channel attribute.
+
+Units:  amp
+Valid Range:  0.00-60.00
+Default Value:  0.00
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_PROG_CP_POWER"
+	"Program Properties:CHR62000_ATTR_PROG_CP_POWER"
+	fD readwrite 1 118C57
+	//const: CHR62000_ATTR_PROG_CP_POWER
+"Specifies the CP tracking power to the power supply. It's a hidden and multi channel attribute.
+
+Units:  watt
+Valid Range:  0.0-1260.0
+Default Value:  1260.0
+
+Notes:  The valid range are different by models
+
+"
+attribute: "CHR62000_ATTR_PROG_CP_RESPONSE"
+	"Program Properties:CHR62000_ATTR_PROG_CP_RESPONSE"
+	iL readwrite 1 118C58
+	//const: CHR62000_ATTR_PROG_CP_RESPONSE
+"Specifies the CP tracking response to the power supply. It's a hidden and multi channel attribute.
+
+Units:  percent
+Valid Range:  1-100
+Default Value:  1
+
+"
+attribute: "CHR62000_ATTR_SLAVE_NUMBERS"
+	"Series/Parallel:CHR62000_ATTR_SLAVE_NUMBERS"
+	iL readonly 1 118C4D
+	//const: CHR62000_ATTR_SLAVE_NUMBERS
+"Specifies the slave numbers to the power supply.
+
+Valid Range:
+1 - Slave numbers sets to 1
+2 - Slave numbers sets to 2
+3 - Slave numbers sets to 3
+4 - Slave numbers sets to 4
+
+Default Value: 1
+
+"
+attribute: "CHR62000_ATTR_STATUS_ESE"
+	"Status Properties:CHR62000_ATTR_STATUS_ESE"
+	iL readwrite 1 118C4B
+	//const: CHR62000_ATTR_STATUS_ESE
+"Specifies the standard event status enable register to the power supply.
+
+Valid Range: 0-255
+   
+Default Value: 0
+
+"
+attribute: "CHR62000_ATTR_STATUS_SRE"
+	"Status Properties:CHR62000_ATTR_STATUS_SRE"
+	iL readwrite 1 118C4C
+	//const: CHR62000_ATTR_STATUS_SRE
+"Specifies the service request enable register to the power supply.
+
+Valid Range: 0-255
+   
+Default Value: 0
+
+"
