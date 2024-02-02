@@ -1,0 +1,2 @@
+Driver version: V1.0
+Tested machine version : IT-M7723     1.BC-5.0I5.0I-5.2Q5.2Q-1.171.17-1.DA-1.05
