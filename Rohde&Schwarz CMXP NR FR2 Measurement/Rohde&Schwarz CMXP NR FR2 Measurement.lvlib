@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="15008000">
+<Library LVVersion="20008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.DefaultMenu" Type="Str">dir.mnu</Property>
 	<Property Name="NI.Lib.Description" Type="Str">LabVIEW Plug and Play instrument driver for Rohde&amp;Schwarz CMXP NR FR2 Measurement</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str">/&lt;instrlib&gt;/Rohde&amp;Schwarz CMXP NR FR2 Measurement/Public/rscmxpnrfr2m.chm</Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!**!!!*Q(C=\:1R&lt;FJ"%):`L"2JO9&amp;&amp;24^8A#/]+US8'EK8N*%C78-!'C38K&lt;D#+$?A=?'3+\R]&lt;^`AR)I-D:%=C6XGM@QT/`/^X77FVLZ+8^2@;OOT$4]20)&lt;!Y6'$12PV-71-;N*&lt;4X];HK&lt;VLV%HV`K@_46YX^`X@`Q8_(7WX@QX```NP^#)?&lt;A9&gt;/5G42IJFFBADFF\OT\2%TX2%TX2%TX1!TX1!TX1!^X2(&gt;X2(&gt;X2(&gt;X1$&gt;X1$&gt;X1$&lt;VV&gt;+%,8?CM3F)]+:1E42)EQ;!I?31]#5`#E`$Q5QF0QJ0Q*$Q*$S&amp;+?"+?B#@B38C9JI1HY5FY%J[%BV3.*&amp;N(BS@B)&lt;U#HI!HY!FY!BZ++O!*!)*C1?)A#2A+H-%AY!FY!B['#HA#HI!HY!FY=#PA#8A#HI!HY'&amp;+7Z6I.%.(BY=U=HA=(I@(Y8&amp;Y3#W(R_&amp;R?"Q?BY&gt;S=HA=(A@#+?AE"U(/*#@!_?(Q/$R]S?&amp;R?"Q?B]@BQ&gt;6WS.P+$$2$2Y@(Y$&amp;Y$"[$R_!BB1Q?A]@A-8A-(N,+Y$&amp;Y$"[$R_#BF!Q?A]@A-5#-IJ38E=S9;!1:AM($JZU7;\M5D=2;L\`G?&amp;"6"V"VM&amp;1(2H516"OMWDD6BKA77L7!KI62P&lt;$K263!KM+KB+J!(8E?M$WWQT&lt;9#OOQ"4&lt;$JM05$QY](I][(!\;\`@;\8&lt;;&lt;$:;L6&lt;KOE[,R5+TW5T4[@4VNLKHDWVSOJ=?''^`P3R`TL^`?]LH&lt;DP`M&gt;T/(Z?$@EU&lt;\[80=$@K4PV@VTRL^"P7X91&gt;!!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">352354304</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!**!!!*Q(C=\:1R&lt;FJ"%):`L"2JO9&amp;&amp;24^8A#/]+US8'EK8N*%C78-!'C38K&lt;D#+$?A=?'3+\R]&lt;^`AR)I-D:%=C6XGM@QT/`/^X77FVLZ+8^2@;OOT$4]20)&lt;!Y6'$12PV-71-;N*&lt;4X];HK&lt;VLV%HV`K@_46YX^`X@`Q8_(7WX@QX```NP^#)?&lt;A9&gt;/5G42IJFFBADFF\OT\2%TX2%TX2%TX1!TX1!TX1!^X2(&gt;X2(&gt;X2(&gt;X1$&gt;X1$&gt;X1$&lt;VV&gt;+%,8?CM3F)]+:1E42)EQ;!I?31]#5`#E`$Q5QF0QJ0Q*$Q*$S&amp;+?"+?B#@B38C9JI1HY5FY%J[%BV3.*&amp;N(BS@B)&lt;U#HI!HY!FY!BZ++O!*!)*C1?)A#2A+H-%AY!FY!B['#HA#HI!HY!FY=#PA#8A#HI!HY'&amp;+7Z6I.%.(BY=U=HA=(I@(Y8&amp;Y3#W(R_&amp;R?"Q?BY&gt;S=HA=(A@#+?AE"U(/*#@!_?(Q/$R]S?&amp;R?"Q?B]@BQ&gt;6WS.P+$$2$2Y@(Y$&amp;Y$"[$R_!BB1Q?A]@A-8A-(N,+Y$&amp;Y$"[$R_#BF!Q?A]@A-5#-IJ38E=S9;!1:AM($JZU7;\M5D=2;L\`G?&amp;"6"V"VM&amp;1(2H516"OMWDD6BKA77L7!KI62P&lt;$K263!KM+KB+J!(8E?M$WWQT&lt;9#OOQ"4&lt;$JM05$QY](I][(!\;\`@;\8&lt;;&lt;$:;L6&lt;KOE[,R5+TW5T4[@4VNLKHDWVSOJ=?''^`P3R`TL^`?]LH&lt;DP`M&gt;T/(Z?$@EU&lt;\[80=$@K4PV@VTRL^"P7X91&gt;!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Public" Type="Folder">

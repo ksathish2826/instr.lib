@@ -1,52 +1,52 @@
-<?xml version='1.0'?>
-<Project Type="Project" LVVersion="8208000">
-   <Property Name="Instrument Driver" Type="Str">True</Property>
-   <Property Name="NI.Project.Description" Type="Str">This project is used by developers to edit API and example files for LabVIEW Plug and Play instrument drivers.</Property>
-   <Item Name="My Computer" Type="My Computer">
-      <Property Name="CCSymbols" Type="Str">OS,Win;CPU,x86;</Property>
-      <Property Name="specify.custom.address" Type="Bool">false</Property>
-      <Item Name="Examples" Type="Folder">
-         <Item Name="RIGOL DP1000 Series.bin3" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Examples/RIGOL DP1000 Series.bin3"/>
-         <Item Name="RIGOL DP1000 Series Output DC Volts.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Examples/RIGOL DP1000 Series Output DC Volts.vi"/>
-      </Item>
-      <Item Name="RIGOL DP1000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/RIGOL DP1000 Series.lvlib">
-         <Item Name="Public" Type="Folder">
-            <Item Name="Action-Status" Type="Folder">
-               <Item Name="Action-Status.mnu" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Action-Status/Action-Status.mnu"/>
-               <Item Name="Enable Timer.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Action-Status/Enable Timer.vi"/>
-               <Item Name="Reset Output Protection.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Action-Status/Reset Output Protection.vi"/>
-            </Item>
-            <Item Name="Configure" Type="Folder">
-               <Item Name="Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Configure/Configure.mnu"/>
-               <Item Name="Configure Current Limit.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Configure/Configure Current Limit.vi"/>
-               <Item Name="Configure Output Timer.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Configure/Configure Output Timer.vi"/>
-               <Item Name="Configure Output.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Configure/Configure Output.vi"/>
-               <Item Name="Configure OVP.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Configure/Configure OVP.vi"/>
-               <Item Name="Configure Tracking.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Configure/Configure Tracking.vi"/>
-            </Item>
-            <Item Name="Data" Type="Folder">
-               <Item Name="Data.mnu" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Data/Data.mnu"/>
-               <Item Name="Read Output.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Data/Read Output.vi"/>
-            </Item>
-            <Item Name="Utility" Type="Folder">
-               <Item Name="Utility.mnu" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Utility/Utility.mnu"/>
-               <Item Name="Recall or Store Configuration.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Utility/Recall or Store Configuration.vi"/>
-               <Item Name="Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Utility/Reset.vi"/>
-               <Item Name="Revision Query.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Utility/Revision Query.vi"/>
-               <Item Name="Self-Test.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Utility/Self-Test.vi"/>
-            </Item>
-            <Item Name="dir.mnu" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/dir.mnu"/>
-            <Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Close.vi"/>
-            <Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/Initialize.vi"/>
-            <Item Name="VI Tree.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Public/VI Tree.vi"/>
-         </Item>
-         <Item Name="Private" Type="Folder">
-            <Item Name="Default Instrument Setup.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Private/Default Instrument Setup.vi"/>
-            <Item Name="Write.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Private/Write.vi"/>
-         </Item>
-         <Item Name="RIGOL DP1000 Series Readme.html" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/RIGOL DP1000 Series Readme.html"/>
-      </Item>
-      <Item Name="Dependencies" Type="Dependencies"/>
-      <Item Name="Build Specifications" Type="Build"/>
-   </Item>
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<Project Type="Project" LVVersion="20008000">
+	<Property Name="Instrument Driver" Type="Str">True</Property>
+	<Property Name="NI.Project.Description" Type="Str">This project is used by developers to edit API and example files for LabVIEW Plug and Play instrument drivers.</Property>
+	<Item Name="My Computer" Type="My Computer">
+		<Property Name="CCSymbols" Type="Str">OS,Win;CPU,x86;</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Examples" Type="Folder">
+			<Item Name="RIGOL DP1000 Series.bin3" Type="Document" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Examples/RIGOL DP1000 Series.bin3"/>
+			<Item Name="RIGOL DP1000 Series Output DC Volts.vi" Type="VI" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/Examples/RIGOL DP1000 Series Output DC Volts.vi"/>
+		</Item>
+		<Item Name="RIGOL DP1000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/RIGOL DP1000 Series/RIGOL DP1000 Series.lvlib"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+			</Item>
+		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
+	</Item>
 </Project>

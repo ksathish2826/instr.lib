@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="15008000">
+<Library LVVersion="20008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.DefaultMenu" Type="Str">dir.mnu</Property>
 	<Property Name="NI.Lib.Description" Type="Str">LabVIEW Plug and Play instrument driver for CMX500 Radio Communication Tester</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)D!!!*Q(C=\&gt;4.=2J"%-8R*Z=/PJ+"CR1["6)AB5["+U&gt;3?#G1!B=#["2)A247`RW[&lt;#24Y).5*65RIU(QZOP(\,,3+$_F6UW0SP&amp;OO@20V/-]&gt;IT`_X,&gt;XW^[\('[HN`2W`H(@_;`7_47`L@\\`FVNTT\H`X@O`^"9=TWY;"0,N,,E.++:FL39HS\K=C,P-C,P-C,X/1G.\H*47\S*%`S*%`S*%`S)!`S)!`S)!`S5=F&amp;,H+2=SL&amp;ZM6'R;,&amp;!M6A+#J?#E`B+4S&amp;BY]K0)7H]"3?QM-1&amp;:\#5XA+4_&amp;BGAJ0Y3E]B;@QM.31V+DE?!I0S]NYD-&gt;YD-&gt;YW&amp;,'9Q"G-\/Q713'4+&gt;Z9TT'9TS]F@%9D`%9D`(1,?-R(O-R(O.BSDA6$]V=S@'QD"*0YEE]C3@RM,134_**0)EH]&lt;#&gt;%E`C32$*BMHC%*2-3A9E(R*0YO'@%E`C34S**`(1.;Z1DJ/:.8-FRR.Y!E`A#4S"BS55?!*0Y!E]A9&gt;F&amp;8A#4_!*0)'(L22Y!E`A#3$"JGSP9,&amp;A9D!I#!)0@_.OC8'60#1R;P]U,T?K_A:5XVDK'U:^)[APM0L#K3_)_K$6"[A_'0586H]2.6#^M8J"^5#&gt;?4X2$L1^&lt;5@&lt;U.;U&amp;7V*7]R40XDA_8T7[843Y8$1@L`8&lt;L@4:L02?LX7;L83=LH59L(Y]\4[2&lt;W5F`^Z,GU:^VHN]FT[#M^'`&gt;"U^:DHD(Y$N[SZX1!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">352354304</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)D!!!*Q(C=\&gt;4.=2J"%-8R*Z=/PJ+"CR1["6)AB5["+U&gt;3?#G1!B=#["2)A247`RW[&lt;#24Y).5*65RIU(QZOP(\,,3+$_F6UW0SP&amp;OO@20V/-]&gt;IT`_X,&gt;XW^[\('[HN`2W`H(@_;`7_47`L@\\`FVNTT\H`X@O`^"9=TWY;"0,N,,E.++:FL39HS\K=C,P-C,P-C,X/1G.\H*47\S*%`S*%`S*%`S)!`S)!`S)!`S5=F&amp;,H+2=SL&amp;ZM6'R;,&amp;!M6A+#J?#E`B+4S&amp;BY]K0)7H]"3?QM-1&amp;:\#5XA+4_&amp;BGAJ0Y3E]B;@QM.31V+DE?!I0S]NYD-&gt;YD-&gt;YW&amp;,'9Q"G-\/Q713'4+&gt;Z9TT'9TS]F@%9D`%9D`(1,?-R(O-R(O.BSDA6$]V=S@'QD"*0YEE]C3@RM,134_**0)EH]&lt;#&gt;%E`C32$*BMHC%*2-3A9E(R*0YO'@%E`C34S**`(1.;Z1DJ/:.8-FRR.Y!E`A#4S"BS55?!*0Y!E]A9&gt;F&amp;8A#4_!*0)'(L22Y!E`A#3$"JGSP9,&amp;A9D!I#!)0@_.OC8'60#1R;P]U,T?K_A:5XVDK'U:^)[APM0L#K3_)_K$6"[A_'0586H]2.6#^M8J"^5#&gt;?4X2$L1^&lt;5@&lt;U.;U&amp;7V*7]R40XDA_8T7[843Y8$1@L`8&lt;L@4:L02?LX7;L83=LH59L(Y]\4[2&lt;W5F`^Z,GU:^VHN]FT[#M^'`&gt;"U^:DHD(Y$N[SZX1!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">4.0.140.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
