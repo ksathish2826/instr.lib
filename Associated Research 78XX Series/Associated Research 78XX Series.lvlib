@@ -98,7 +98,11 @@
 				<Item Name="Set Ramp Up.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Ramp Up.vi"/>
 				<Item Name="Set Range.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Range.vi"/>
 				<Item Name="Set Scanner.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Scanner.vi"/>
+				<Item Name="Set Current.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Current.vi"/>
+				<Item Name="Set Lo Limit Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Lo Limit Voltage.vi"/>
+				<Item Name="Set Hi Limit Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Hi Limit Voltage.vi"/>
 				<Item Name="Set Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Voltage.vi"/>
+				<Item Name="Set Offset Voltage.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Offset Voltage.vi"/>
 			</Item>
 			<Item Name="Security" Type="Folder">
 				<Item Name="Security.mnu" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Security/Security.mnu"/>
