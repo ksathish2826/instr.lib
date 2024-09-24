@@ -1,0 +1,2 @@
+Driver version: V1.0-01
+Tested machine version : IT-M3906C-800-24   V000.001.003-4.07-1.56
