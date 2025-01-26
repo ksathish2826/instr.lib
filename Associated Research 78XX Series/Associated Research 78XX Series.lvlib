@@ -132,6 +132,10 @@
 					<Item Name="Scanner String.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Low Level/Scanner String.vi"/>
 					<Item Name="String Split at Count.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Low Level/String Split at Count.vi"/>
 					<Item Name="ULTRA Test Type.ctl" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Low Level/ULTRA Test Type.ctl"/>
+					<Item Name="Scanner Settings - 24ch.ctl" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Low Level/Scanner Settings - 24ch.ctl"/>
+					<Item Name="Scanner String - 24ch.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Low Level/Scanner String - 24ch.vi"/>
+					<Item Name="Encode ACW Parameters - 24ch.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Low Level/Encode ACW Parameters - 24ch.vi"/>
+					<Item Name="Encode DCW Parameters - 24ch.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Low Level/Encode DCW Parameters - 24ch.vi"/>
 				</Item>
 				<Item Name="Configure_Steps.mnu" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Configure_Steps.mnu"/>
 				<Item Name="Get Prompt Message.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Get Prompt Message.vi"/>
@@ -154,6 +158,7 @@
 				<Item Name="Step Add GND W Parameters.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Step Add GND W Parameters.vi"/>
 				<Item Name="Step Delete.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Step Delete.vi"/>
 				<Item Name="Step Select.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Steps/Step Select.vi"/>
+				<Item Name="Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Configure.mnu"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Configure_System.mnu" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/System/Configure_System.mnu"/>
@@ -187,7 +192,6 @@
 				<Item Name="Set Touch Sound.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/System/Set Touch Sound.vi"/>
 				<Item Name="Set Barcode IP.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/System/Set Barcode IP.vi"/>
 			</Item>
-			<Item Name="Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Configure.mnu"/>
 		</Item>
 		<Item Name="Data" Type="Folder">
 			<Item Name="Data.mnu" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Data/Data.mnu"/>
@@ -255,4 +259,5 @@
 		<Item Name="Validate Instrument Revision.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Private/Validate Instrument Revision.vi"/>
 	</Item>
 	<Item Name="Associated Research 78XX Series Readme.html" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Associated Research 78XX Series Readme.html"/>
+	<Item Name="Set Scanner - 24ch.vi" Type="VI" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Public/Configure/Parameters/Set Scanner - 24ch.vi"/>
 </Library>

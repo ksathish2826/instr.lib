@@ -20,8 +20,6 @@
 			<Item Name="Associated Research 78XX Series.bin3" Type="Document" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Examples/Associated Research 78XX Series.bin3"/>
 		</Item>
 		<Item Name="Associated Research 78XX Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Associated Research 78XX Series/Associated Research 78XX Series.lvlib"/>
-		<Item Name="Read Status Byte Query.vi" Type="VI" URL="../../../../../../Users/cn15551aa/Desktop/Read Status Byte Query.vi"/>
-		<Item Name="Standard Event Register Query.vi" Type="VI" URL="../../../../../../Users/cn15551aa/Desktop/Standard Event Register Query.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
